@@ -11,9 +11,9 @@ export const MenuBar = () => {
           const active = router.pathname == data.url;
           return (
             <MenuItem
-              logoSrc={data.logoUrl}
+              icon={data.icon}
               active={active}
-              label={data.name}
+              name={data.name}
               url={data.url}
               key={index}
             />

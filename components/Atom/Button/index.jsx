@@ -4,8 +4,6 @@ import { Spinner } from '../Spinner';
 export const Button = ({
   color,
   bgColor,
-  hover,
-  border,
   rounded,
   blocked,
   onClick,
@@ -17,7 +15,7 @@ export const Button = ({
   const className = [
     'flex items-center justify-center',
     'mx-auto',
-    'px-4 py-1.5 md:px-8 md:py-2',
+    'px-4 py-1.5 md:px-6 md:py-2',
     'outline-none',
     'focus:outline-none focus:ring-0',
     'border-2 border-indigo-300',

@@ -42,26 +42,30 @@ if (typeof window !== 'undefined') {
   });
 }
 export const getWalletData = async () => {
-  const web3ModalProvider = await web3Modal.connect();
+  try {
+    const web3ModalProvider = await web3Modal.connect();
 
-  const provider = new ethers.providers.Web3Provider(web3ModalProvider);
+    const provider = new ethers.providers.Web3Provider(web3ModalProvider);
 
-  const [account] = await window.ethereum.request({
-    method: 'eth_requestAccounts',
-  });
+    if (typeof window.ethereum !== 'undefined') {
+      const [account] = await window.ethereum.request({
+        method: 'eth_requestAccounts',
+      });
 
-  let balance = await provider.getBalance(account);
+      let balance = await provider.getBalance(account);
 
-  balance = ethers.utils.formatEther(balance);
+      balance = ethers.utils.formatEther(balance);
 
-  const signer = provider.getSigner();
+      const signer = provider.getSigner();
 
-  const data = {
-    currentAccount: account,
-    accountBalance: balance,
-    isConnected: account && true,
-    provider: provider,
-    signer: signer,
-  };
-  return data;
+      const data = {
+        currentAccount: account,
+        accountBalance: balance,
+        isConnected: account && true,
+        provider: provider,
+        signer: signer,
+      };
+      return data;
+    }
+  } catch (e) {}
 };

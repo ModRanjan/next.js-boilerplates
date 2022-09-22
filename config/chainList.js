@@ -9,7 +9,7 @@ export const chainList = [
     ],
     logoUrl: '/images/chainLogo/ethereum.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-goerli',
     etherscan: 'https://etherscan.io/address/',
   },
   {
@@ -22,7 +22,7 @@ export const chainList = [
     ],
     logoUrl: '/images/chainLogo/ethereum.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-goerli',
     etherscan: 'https://goerli.etherscan.io/address/',
   },
 
@@ -36,7 +36,7 @@ export const chainList = [
     ],
     logoUrl: '/images/chainLogo/polygon.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-polygon',
     etherscan: 'https://polygonscan.com/address/',
   },
   {
@@ -49,7 +49,7 @@ export const chainList = [
     ],
     logoUrl: '/images/chainLogo/polygon.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-polygon',
     etherscan: 'https://mumbai.polygonscan.com/address/',
   },
   {
@@ -60,7 +60,7 @@ export const chainList = [
     rpc: ['https://bsc-dataseed1.binance.org'],
     logoUrl: '/images/chainLogo/binance.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-chapel',
     etherscan: 'https://bscscan.com/address/',
   },
   {
@@ -71,7 +71,7 @@ export const chainList = [
     rpc: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
     logoUrl: '/images/chainLogo/binance.png',
     subgraphApiUrl:
-      'https://api.thegraph.com/subgraphs/name/tusharmahajan8359/web3-goerli',
+      'https://api.thegraph.com/subgraphs/name/tushar-simform/web3-chapel',
     etherscan: 'https://testnet.bscscan.com/address/',
   },
 ];

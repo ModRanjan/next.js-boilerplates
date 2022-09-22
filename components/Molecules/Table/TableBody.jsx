@@ -1,12 +1,15 @@
 import React from 'react';
 
-export const TableBody = ({ rows, columns, onClick }) => {
+export const TableBody = ({ rows, columns, onClickRow }) => {
   return (
     <tbody className="bg-white divide-y divide-gray-200 ">
       {rows.map((data, index) => {
+        const handleOnClickRow = () => {
+          onClickRow && onClickRow(data);
+        };
         return (
           <tr
-            onClick={() => onClick}
+            onClick={handleOnClickRow}
             className="hover:bg-gray-100 "
             key={index}
           >

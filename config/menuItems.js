@@ -1,18 +1,21 @@
+import { AiFillHome, AiFillInfoCircle } from 'react-icons/ai';
+import { ImDatabase } from 'react-icons/im';
+
 const menuItemData = [
   {
     name: 'Home',
-    logoUrl: '/images/menuLogo/home.png',
+    icon: AiFillHome,
     url: '/',
   },
   {
     name: 'All Users',
-    logoUrl: '/images/menuLogo/allTokens.png',
+    icon: ImDatabase,
     url: '/users',
   },
 
   {
     name: 'Docs',
-    logoUrl: '/images/menuLogo/docs.png',
+    icon: AiFillInfoCircle,
     url: 'https://web3js.readthedocs.io/en/v1.7.5/',
   },
 ];
